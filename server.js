@@ -8,10 +8,10 @@ const app = express();
 const PORT = process.env.PORT || 4000;
 
 const db = mysql.createPool({
-  host: "sql12.freesqldatabase.com",
-  user: "sql12712839",
-  password: "2mBe9tImeU",
-  database: "sql12712839",
+  host: "localhost",
+  user: "root",
+  password: "root",
+  database: "chat_app",
 });
 
 app.use(cors());
