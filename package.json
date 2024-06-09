@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "nodemon server.js & next dev ",
-    "build": "next build & node server.js",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
