@@ -1,17 +1,12 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+Steps to setup this project
+
+1. Create/Import the mysql schema referring the chat_app.sql file.
+2. npm install to install all the required dependencies.
+3. npm run dev should run the application along with backend server.
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
