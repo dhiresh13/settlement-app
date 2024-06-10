@@ -18,7 +18,7 @@ const initial_msg = {
 };
 
 let apiURL = "https://tech-assignment-fa41facc3a1c.herokuapp.com";
-let wsURL = "ws://tech-assignment-fa41facc3a1c.herokuapp.com/";
+let wsURL = "https://tech-assignment-fa41facc3a1c.herokuapp.com/";
 
 // let apiURL = "http://localhost:4000";
 // let wsURL = "http://localhost:4000";
