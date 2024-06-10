@@ -7,11 +7,18 @@ const socketIO = require("socket.io");
 const app = express();
 const PORT = process.env.PORT || 4000;
 
+// const db = mysql.createPool({
+//   host: "localhost",
+//   user: "root",
+//   password: "root",
+//   database: "chat_app",
+// });
+
 const db = mysql.createPool({
-  host: "localhost",
-  user: "root",
-  password: "root",
-  database: "chat_app",
+  host: "sql12.freesqldatabase.com",
+  user: "sql12712839",
+  password: "2mBe9tImeU",
+  database: "sql12712839",
 });
 
 app.use(cors());
@@ -66,7 +73,7 @@ app.post("/api/update", async (req, res) => {
   try {
     const { text, updated_by, status, id } = req.body;
 
-    const obj_query = `select MAX(id) from chat_app.messages`;
+    const obj_query = `select MAX(id) from messages`;
     const [latest] = await db.query(obj_query);
 
     if (Object.values(latest[0])[0] !== id) {
