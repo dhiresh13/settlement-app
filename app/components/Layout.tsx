@@ -7,7 +7,7 @@ const LayoutScreen = () => {
     <div className="flex flex-col items-center justify-center min-h-screen">
       <Image src={logo} alt="Leyline Technologies" width={200} height={200} />
       <h1 className="text-3xl font-bold mb-8 text-center px-4">
-        Welcome to the Chat App
+        Welcome to the settlement App
       </h1>
       <div className="flex flex-col sm:flex-row">
         <Link href="/chat/partyA">
